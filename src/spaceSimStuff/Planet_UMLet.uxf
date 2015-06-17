@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>380</y>
+      <w>690</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>spaceSimStuff::Sim
+--
+-FRAME_SIZE: int
+-FRAME_RATE: int
+-FRAME_TIME: double
+-MAX_PLANETS: int
+-planets: Planet[]
+-size: int
+-timeAccel: double
+-fieldOfView: int
+-comets: boolean
+-nextComet: double
+-deltaT: double
+-time: double
+-frame: JFrame
+-pixelScale: double
+-title: String
+--
++Sim(int FRAME_SIZE, int FRAME_RATE, double FRAME_TIME, int MAX_PLANETS): ctor
++startSimulation(Planet[] planets, int size, double timeAccel, int fieldOfView, boolean comets): void
+-simulate(): void
++paint(Graphics g): void
+-paintPlanet(Planet planet, Graphics2D g): void
+-comets(): void
++setTitle(String title): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>870</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>spaceSimStuff::Planet
+--
++GRAV_CST: BigDecimal
+-x: double
+-y: double
+-vx: double
+-vx: double
+-ax: double
+-ay: double
+-mass: BigInteger
+-planetRadius: int
+-color: Color
+--
++Planet(double initialX, double initialY, double initialVx, double initialVy, int planetRadius, BigInteger mass, Color color): ctor
++updateAccVel(int planetIndex, Planet[] planets, int size, double deltaT): void
++updatePos(double deltaT): void
++getX(): double
++getY(): double
++getPlanetRadius(): int
++getColor(): Color
++setMass(BigInteger mass): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>400</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>spaceSimStuff::Interface
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

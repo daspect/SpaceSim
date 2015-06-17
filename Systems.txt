@@ -1,0 +1,44 @@
+*Space systems are saved in this file
+*Do not modify the format of this file
+*
+*Planets format:
+**initial [x  y  x_velocity  y_velocity] (km, km, km/s, km/s)
+**radius (km)
+**mass (kg)
+**color [r g b] (each ints 0 - 255)
+**time generated
+*
+*
+*
+**Title
+System 1
+**Field of View (km)
+200000
+**Time acceleration
+4000
+**Generate satellites?
+false
+**Planets:
+Super_Earth_A
+0 0 0 0
+6371
+59721900000000000000000000
+0 0 200
+0
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+**Title
+System boo!
+**Field of View (km)
+200000
+**Time acceleration
+4000
+**Generate satellites?
+false
+**Planets:
+Super_Earth_A
+0 0 0 0
+6371
+59721900000000000000000000
+255 0 0
+0
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

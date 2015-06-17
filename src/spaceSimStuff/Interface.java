@@ -96,7 +96,7 @@ public class Interface {
 		case 6:	//Testing
 				sim.setFieldOfView(200000); //km field of view
 				sim.setTimeAccel(4000);
-				Planet supEarth10 = new Planet (0,15000,10,0,EARTH_RADIUS,SUPER_EARTH_MASS,Color.orange, 0);
+				Planet supEarth10 = new Planet (0,15000,10,0,EARTH_RADIUS,SUPER_EARTH_MASS,Color.black, 0);
 				spaceSystem.addPlanet(supEarth10);
 				Planet supEarth11 = new Planet (0,-15000,-10,0,EARTH_RADIUS,SUPER_EARTH_MASS, Color.pink, 0);
 				spaceSystem.addPlanet(supEarth11);
